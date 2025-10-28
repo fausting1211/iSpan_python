@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>CSS的使用--自訂樣式(Type)</title>
+    <style>
+        /* 也可以指定標籤 */
+        h1.st1 {
+            color: purple;
+            text-transform: capitalize;
+        }
+
+        /* 要記的加點 */
+        .st2 {
+            color: orange;
+            font-style: italic;
+        }
+
+        .col1 {
+            color: gray;
+        }
+
+        .col2 {
+            color: brown;
+        }
+
+        .size1 {
+            font-size: 2em;
+        }
+
+        .under1 {
+            text-decoration: underline;
+        }
+
+        .sty1 {
+            font-style: italic;
+        }
+
+        h1 {
+            color: pink;
+        }
+
+        .col1h1 {
+            color: orange;
+        }
+
+        #col2h1 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 優先序id>class>type -->
+    <h1 id="col2h1" class="col1h1">apple</h1>
+    <h2 class="st2">orange</h2>
+    <h2 class="st1">banana</h2>
+    <h3 class="st2">grape</h3>
+    <h3 class="col2 size1 under1">monkey</h3>
+    <h3 class="col2 col1 size1 under1">panda</h3>
+</body>
+
+</html>

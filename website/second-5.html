@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>CSS的使用--自訂樣式(Type)</title>
+    <!-- link建議放在最上面 -->
+    <link rel="stylesheet" href="styles/stl.css">
+    <style>
+        p {
+            color: aqua;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 優先序id>class>type -->
+    <!-- 優先序inline>embedding>linking -->
+
+    <!-- inline覆蓋了id -->
+    <h1 style="color: ivory;" id="col2h1" class="col1h1">apple</h1>
+    <h2 class="st2">orange</h2>
+    <h2 class="st1">banana</h2>
+    <h3 class="st2">grape</h3>
+    <h3 class="col2 size1 under1">monkey</h3>
+    <h3 class="col2 col1 size1 under1">panda</h3>
+    <p style="color: blueviolet;">This a paragrpah!</p>
+</body>
+
+</html>

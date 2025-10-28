@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="8">
+    <title>Boxmodel</title>
+    <style>
+        /* *修改所有元素 */
+        /* 清除文字預設空間 */
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .box1 {
+            border: 1px solid gray;
+            width: 800px;
+        }
+
+        img {
+            box-sizing: border-box;
+            width: 400px;
+            border: 3px solid red;
+            padding: 5px 10px 15px 20px;
+            padding-left: 20px;
+
+            /* 會是預設距離+margin */
+            margin: 20px;
+        }
+
+        .img1 {
+            float: left;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        /* p {
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+
+        <h2>【本日焦點】仍有運豬車趴趴走 台南市府將重懲</h2>
+        <!-- 並連影響畫面顯示，圖片會緊連而無空隙 -->
+        <!-- <img class="img1" src="images/p1.webp" alt=""><img class="img2" src="images/p1.webp" alt=""> -->
+        <img class="img1" src="images/p1.webp" alt="">
+
+        <p>
+            你今天好嗎？<br>全台嚴防非洲豬瘟之際，台南竟有豬農無視禁運規定，市長黃偉哲痛斥「無法原諒」，將從重懲處。勞保年金漸進式調整邁向最後階段，明年起請領年齡再延後一歲，民國51年次以後出生的勞工，法定請領年齡皆為滿65歲。國內飲食常見的烤麵包、咖啡、堅果、玉米等，若烹調或存放方式不對，都可能產生致癌物，醫師列出潛伏在生活中的六種致癌物。一起關注本日新聞。
+        </p>
+        <p>
+            你今天好嗎？<br>全台嚴防非洲豬瘟之際，台南竟有豬農無視禁運規定，市長黃偉哲痛斥「無法原諒」，將從重懲處。勞保年金漸進式調整邁向最後階段，明年起請領年齡再延後一歲，民國51年次以後出生的勞工，法定請領年齡皆為滿65歲。國內飲食常見的烤麵包、咖啡、堅果、玉米等，若烹調或存放方式不對，都可能產生致癌物，醫師列出潛伏在生活中的六種致癌物。一起關注本日新聞。
+        </p>
+        <p>
+            你今天好嗎？<br>全台嚴防非洲豬瘟之際，台南竟有豬農無視禁運規定，市長黃偉哲痛斥「無法原諒」，將從重懲處。勞保年金漸進式調整邁向最後階段，明年起請領年齡再延後一歲，民國51年次以後出生的勞工，法定請領年齡皆為滿65歲。國內飲食常見的烤麵包、咖啡、堅果、玉米等，若烹調或存放方式不對，都可能產生致癌物，醫師列出潛伏在生活中的六種致癌物。一起關注本日新聞。
+        </p>
+    </div>
+</body>
+
+</html>

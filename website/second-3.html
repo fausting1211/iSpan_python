@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>CSS的使用--自訂樣式(ID)</title>
+    <style>
+        #theH1 {
+            color: purple;
+        }
+    </style>
+
+    <!-- script無效因為還沒有目標物 -->
+    <!-- <script>
+        // 大小寫有區分
+        document.getElementById("theH1").style.color = "orange";
+    </script> -->
+</head>
+
+<body>
+    <h1 id="theH1">apple</h1>
+    <!-- <h2 id="theH1">orange</h2> -->
+    <script>
+        document.getElementById("theH1").style.color = "orange";
+    </script>
+    <!-- 只會修改一個 apple(因上到下執行) -->
+</body>
+
+</html>

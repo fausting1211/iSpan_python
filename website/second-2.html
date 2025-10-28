@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>CSS的使用--自訂樣式(Class)</title>
+    <style>
+        /* 也可以指定標籤 */
+        h1.st1 {
+            color: purple;
+            text-transform: capitalize;
+        }
+
+        /* 要記的加點 */
+        .st2 {
+            color: orange;
+            font-style: italic;
+        }
+
+        .col1 {
+            color: gray;
+        }
+
+        .col2 {
+            color: brown;
+        }
+
+        .size1 {
+            font-size: 2em;
+        }
+
+        .under1 {
+            text-decoration: underline;
+        }
+
+        .sty1 {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="st1">apple</h1>
+    <h2 class="st2">orange</h2>
+    <h2 class="st1">banana</h2>
+    <h3 class="st2">grape</h3>
+    <h3 class="col2 size1 under1">monkey</h3>
+
+    <!-- 在多個 class 共用樣式時，class 的先後順序沒有影響樣式覆蓋，真正決定優先權的是 CSS 宣告的先後順序，後宣告的樣式會覆蓋前面相同選擇器的設定（例如 .col2 在後面宣告時，會覆蓋 .col1 的樣式） -->
+    <h3 class="col2 col1 size1 under1">panda</h3>
+    <h3 class="col1 col2 size1 under1">panda</h3>
+</body>
+
+</html>
