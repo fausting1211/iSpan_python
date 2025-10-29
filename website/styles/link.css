@@ -1,0 +1,7 @@
+/* 用import  css連結其他css */
+/* 先後順序影響執行結果，相同名稱會後改前 */
+
+@import url(fonts.css);
+@import url(link.css);
+@import url(list.css);
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');

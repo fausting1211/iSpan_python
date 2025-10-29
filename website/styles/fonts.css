@@ -1,0 +1,35 @@
+/* google fonts>字型>get font>get embed code>web */
+/* 移到路徑 link.css*/
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap'); */
+
+.google_font {
+    /* 多字型用逗號連結，如果第一個沒有就變第二個 */
+    font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+/* 引用外部字體 */
+@font-face {
+    src: url(../fonts/JustOldFashion.ttf);
+    font-family: font1;
+}
+
+.font1 {
+    font-family: font1;
+}
+
+@font-face {
+    src: url(../fonts/SCRIPTIN.ttf);
+    font-family: font2;
+}
+
+.font1 {
+    font-family: font2;
+}

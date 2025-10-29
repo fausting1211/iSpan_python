@@ -4,8 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="3">
+    <!-- <meta http-equiv="refresh" content="3"> -->
     <title>CSS的使用--自訂樣式(Class)</title>
+
+    <!-- 可以多link -->
+
+    <!-- 這樣要載入多個link -->
+    <!-- <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/fonts.css"> -->
+
+    <!-- 統整成一個CSS -->
+    <link rel="stylesheet" href="styles/link.css">
+
+
+
+
+    <!-- crossorigin跨不同來源使用 -->
+    <!-- Google Font貼後兩條就好 -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+        rel="stylesheet"> -->
+
     <style>
         /* 也可以指定標籤 */
         h1.st1 {
@@ -29,6 +48,7 @@
 
         .size1 {
             font-size: 2em;
+            /* } */
         }
 
         .under1 {
@@ -43,14 +63,15 @@
 
 <body>
     <h1 class="st1">apple</h1>
-    <h2 class="st2">orange</h2>
-    <h2 class="st1">banana</h2>
+    <h2 class="st2 font1">orange</h2>
+    <h2 class="st1 font2">banana</h2>
     <h3 class="st2">grape</h3>
     <h3 class="col2 size1 under1">monkey</h3>
 
     <!-- 在多個 class 共用樣式時，class 的先後順序沒有影響樣式覆蓋，真正決定優先權的是 CSS 宣告的先後順序，後宣告的樣式會覆蓋前面相同選擇器的設定（例如 .col2 在後面宣告時，會覆蓋 .col1 的樣式） -->
     <h3 class="col2 col1 size1 under1">panda</h3>
     <h3 class="col1 col2 size1 under1">panda</h3>
+    <p class="google_font">HIHIHIHI</p>
 </body>
 
 </html>
