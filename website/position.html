@@ -10,7 +10,9 @@
             border: 3px solid red;
             padding: 5px;
             background-color: #FFECEC;
-            /* position: static; */
+
+            /* 位置不能改變 加了top righ left bottom無效  */
+            position: static;
         }
 
         .relative1 {
@@ -24,6 +26,13 @@
         .relative2 {
             position: relative;
             /* 請加上top or right or left or bottom調整邊界距離 */
+            left: 670px;
+            top: 50px;
+
+            /* 從原來的下面增減初始位置 */
+            /* bottom: 50px; */
+            /* 正值負值方向相反(y) */
+            /* right: -50px; */
 
         }
 
@@ -33,9 +42,10 @@
             background-color: #E8FFF5;
             padding: 5px;
             /* 請設定position:fixed */
-
+            position: fixed;
             /* 請加上top or right or left or bottom調整邊界距離 */
-
+            right: 0;
+            bottom: 50px;
         }
 
         .div_static {
@@ -45,6 +55,7 @@
             border: 3px solid purple;
             background-color: #EBD3E8;
             /* 請設定position:static */
+            position: static;
 
         }
 
@@ -56,6 +67,8 @@
             background-color: #FFE4CA;
             position: absolute;
             /* 請加上top or right or left or bottom來調整邊界距離 */
+            right: 50px;
+            /* 和body相對 */
 
         }
 
@@ -66,6 +79,7 @@
             border: 3px solid purple;
             background-color: #EBD3E8;
             /* 請設定position:relative */
+            position: relative;
 
         }
 
@@ -79,6 +93,7 @@
             background-color: #FFE4CA;
             position: absolute;
             /* 請加上top or right or left or bottom來調整邊界距離 */
+            right: 50px;
 
         }
     </style>

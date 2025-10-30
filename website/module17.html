@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module17</title>
     <style>
+        h1 {
+            background-color: yellow;
+            /* visibility: hidden; */
+            display: none;
+
+        }
+
+        h2 {
+            /* background-color: yellow;
+            visibility: hidden; */
+            /* display: none;  */
+        }
+
         .box {
             background-color: yellow;
         }
@@ -16,17 +29,33 @@
 
         .span2 {
             /* 請在這裡加上visibility屬性，並將span2設為隱藏 */
+            visibility: hidden;
 
         }
 
 
         .box:hover .span1 {
             /* 請在這裡加上display屬性將span1設為消失 */
+            display: none;
 
         }
 
         .box:hover .span2 {
             /* 請在這裡加上visibility屬性將span2設為顯示 */
+            visibility: visible;
+
+        }
+
+        .box2 {
+            width: 100px;
+            height: 75px;
+            border: 1px solid red;
+
+            /* 自動出現卷軸 */
+            /* overflow: auto; */
+
+            /* 超出區塊的不顯示 */
+            overflow: hidden;
 
         }
     </style>
@@ -36,13 +65,24 @@
 </head>
 
 <body>
+    <h1>我是h1</h1>
+    <h2>我是h2</h2>
+    <hr>
     <div class="box">
         <span class="span1">span1</span>
         <label for="" class="label1">
             <span class="span2">span2</span>
         </label>
     </div>
+    <hr>
+    <div class="box2">
+        <!-- 連續英文當字串不換行 電腦當一個字來看-->
+        <!-- 中文換行 -->
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我我
+    </div>
 
+    <!-- Emmet lorem100產生隨機文字 數字為數字 -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolores labore eos iste esse culpa fugiat quod laboriosam dolore maiores! Repellendus animi sapiente, officia reiciendis possimus, aperiam impedit sint incidunt commodi officiis ad dicta et fugit consequuntur dolor aliquam nostrum est autem delectus optio tenetur nulla! Hic nostrum possimus delectus quisquam tempore, asperiores, doloremque voluptatum consequatur, veniam nobis sequi repudiandae ullam obcaecati sapiente. Repellendus, modi illo! Nulla praesentium aperiam, cupiditate dolorem, nobis atque, rerum natus quos accusamus animi voluptas? Beatae, maiores consequatur at fuga unde quibusdam! Nam veniam, ex sunt deleniti totam voluptatibus iure earum molestias tempora reiciendis labore temporibus?</p> -->
 </body>
 
 </html>
